@@ -1,34 +1,51 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "./Footer";
 
-const AboutMe = ({ theme }) => {
+const AboutMe = () => {
+
     return (
-        <div className="section" id='aboutMeSection'>
-            <h2 className="sectionHeader">ABOUT ME</h2>
-            <p className='bio'>Hi, I'm Lucia! I'm a passionate creative  currently residing in Denver, CO. My educational background includes a degree in Statistics and Mathematics from the University of Central Florida, which has equipped me with a strong foundation in analytical thinking and problem-solving.
-                <br></br>
-                <br></br>
-                Throughout my career, I have gained extensive experience in the data realm, tackling complex projects, extracting valuable insights, and making data-driven recommendations. However, I have always had a keen interest in design and a desire to blend my technical expertise with my artistic eye.
-                <br></br>
-                <br></br>
-                That's why I'm embarking on an exciting journey to transition into the field of UX/UI design and development. I believe that my unique combination of analytical thinking and artistic sensibility allows me to approach design challenges from a holistic perspective. I am passionate about creating intuitive and visually appealing user experiences that seamlessly merge form and function.
-                <br></br>
-                <br></br>
-                Beyond my professional pursuits, I find joy in exploring my hobbies. Music has always been a source of inspiration for me, and I love attending live performances and discovering new genres. In addition, I have a deep appreciation for art and enjoy expressing my creativity through various mediums. And of course, I'm a dedicated dog lover and spend my free time giving my dog the life he deserves.
-                <br></br>
-                <br></br>
-                I am committed to lifelong learning and continually expanding my skill set. I am excited to delve into the realms of UX/UI design and development, leveraging my analytical expertise, creative vision, and dedication to continuous growth to make a remarkable impact in the intersection of data and design.
-                <br></br>
-                <br></br>
-                If you're looking for someone who can bring a unique blend of analytical thinking, artistic sensibility, and a genuine love for problem-solving, I would love to connect and explore how we can create something extraordinary together.
-                <br></br>
-                <br></br>
-                </p>
-                <div className='tldrContainer'>
-                    <h2 className='tldr'>TLDR:</h2>
-                    <p><span className={`tldrText ${theme}Text`}>I am a passionate and analytical creative currently transitioning into UX/UI design and development, leveraging my unique blend of statistical expertise, artistic sensibility, and problem-solving skills to create remarkable user experiences.</span></p>
+        <>
+            <Header />
+            <div className='aboutMe'>
+                <div className='sideBar'>
+                    <h1 className='sideBarText'>ABOUT ME</h1>
                 </div>
+                <div className='content'>
+                    <div className='backgroundCard about'>
+                        <h1 className="aboutMeHeader">So, who am I?</h1>
+                        <p>My educational background:</p>
+                        <ul>
+                            <li>Bachelor’s in Science in Statistics & Minor in Mathematics @  University of Central Florida</li>
+                        </ul>
+                        <br></br><br></br>
+                        <p>My career background:</p>
+                        <ul>
+                            <li>Data Analytics/ Data Science Intern @ FINRA</li>
+                            <li>Technology Consultant @ Continuus Technologies</li>
+                            <li>Freelance Frontend Developer</li>
+                        </ul>
+                        <br></br><br></br>
+                        <p>What I like to do in my free time:</p>
+                        <ul>
+                            <li>Paint</li>
+                            <li>Draw</li>
+                            <li>Yoga</li>
+                            <li>Weight Lifting</li>
+                            <li>Hang out with my dog</li>
+                        </ul>
+                        <br></br><br></br>
+                        <p>After working in data for a bit,  I updated my trajectory to focus more on web development & design because of my desire to blend my technical expertise with my artistic eye.</p>
+                        <br></br><br></br>
+                        <p>My unique combination of analytical thinking and artistic sensibility allows me to approach design challenges from a holistic perspective. I am passionate about creating intuitive and visually appealing user experiences that seamlessly merge form and function.</p>
+                        <p>If you're looking for someone who can bring a unique blend of analytical thinking, artistic sensibility, and a genuine love for problem-solving, I would love to connect and explore how we can create something extraordinary together!</p>
+                        <br></br><br></br>
+                        <p>Want more info? --  <a className='resumeText' href='../src/media/LuciaHaswellResume.pdf' download>Download my Resume!</a></p>
+                    </div>
                 </div>
-
+            </div>
+            <Footer />
+        </>
     )
 }
 
