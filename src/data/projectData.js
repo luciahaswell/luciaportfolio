@@ -21,10 +21,12 @@ const projectData = [
         foldername: 'tictactoe',
         shortDescription: "Baby’s first React application -  Tic-Tac-Toe",
         longDescription: "React app that lets users play the classic game of tic-tac-toe. Includes a dark mode feature to switch the display colors.",
-        projectScreenshots: [require("../media/projectimgs/tictactoe/step1.jpg"),
-            require("../media/projectimgs/tictactoe/step2.jpg"),
-            require("../media/projectimgs/tictactoe/step3.jpg"),
-            require("../media/projectimgs/tictactoe/step4.jpg")],
+        projectScreenshots: [
+            require("../media/projectimgs/tictactoe/step1.JPG"),
+            require("../media/projectimgs/tictactoe/step2.JPG"),
+            require("../media/projectimgs/tictactoe/step3.JPG"),
+            require("../media/projectimgs/tictactoe/step4.JPG")
+        ],
         gitHubLink: "https://luciahaswell.github.io/tictactoe/",
         mainColor:"#DDB954",
         accentColor:"#3560DB"
@@ -35,9 +37,9 @@ const projectData = [
         foldername: 'othello',
         shortDescription: "Othello game built with React",
         longDescription: "I recently took an international flight that had screens on the back of the seats. On this 12 hour long voyage, I perused the little screen to find something to entertain my little brain. After finding Othello, I played for a few hours. Finding strategies on how to win and proper chip placement. I started to think more about the logic on how the chips were flipped and figured this would be my next project in React! I got home from the trip and dove right in. So here, I present to you - Othello (Lucia's Version).",
-        projectScreenshots: [require("../media/projectimgs/othello/step1.jpg"),
-            require("../media/projectimgs/othello/step2.jpg"),
-            require("../media/projectimgs/othello/step3.jpg"),
+        projectScreenshots: [require("../media/projectimgs/othello/step1.JPG"),
+            require("../media/projectimgs/othello/step2.JPG"),
+            require("../media/projectimgs/othello/step3.JPG"),
             require("../media/projectimgs/othello/step4.jpg")],
         gitHubLink: "https://luciahaswell.github.io/othello",
         mainColor:"#8DB49A",
@@ -57,7 +59,7 @@ const projectData = [
             require("../media/projectimgs/luciahaswell/step3.png"),
 
         ],
-        gitHubLink: "https://github.com/luciahaswell/luciahaswell",
+        gitHubLink: "https://github.com/luciahaswell/luciaportfolio",
         mainColor:"#3560DB",
         accentColor:"#DDB954"
     },
