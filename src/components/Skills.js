@@ -8,10 +8,10 @@ const Skills = () => {
         <>
             <Header />
             <div className='skillsPage'>
-                <div className='sideBar'>
+                <div className='sideBar skillsSideBar'>
                     <h1 className='sideBarText'>SKILLS</h1>
                 </div>
-                <div className='content'>
+                <div className='content skillsContent'>
                     <div className='backgroundCard skills'>
                         <p>Web Development & Design:</p>
                         <ul>

@@ -23,11 +23,11 @@ const ProjectPage = ({ projectInfo }) => {
         <>
             <ScrollToTop/>
             <Header />
-            <div className='skillsPage'>
-                <div className='sideBar'>
-                    <Link to="/projects"><h1 className='sideBarTextProject'>&#60;back</h1></Link>
+            <div className='projectPage'>
+                <div className='sideBar project'>
+                    <Link to="/projects"><h1 className='sideBarTextProject'>&#60;</h1></Link>
                 </div>
-                <div className='content'>
+                <div className='content projectPageContent'>
                     <div className="projectCard"
                         style={{ backgroundColor: projectInfo.mainColor }}
                     >

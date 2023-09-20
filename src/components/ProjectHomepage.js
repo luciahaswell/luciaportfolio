@@ -9,10 +9,10 @@ const ProjectHomepage = ({projectData}) =>{
         <>
         <Header/>
         <div className='projectHomepage'>
-            <div className='sideBar'>
+            <div className='sideBar projectHomepageSideBar'>
                 <h1 className='sideBarText'>PROJECTS</h1>
             </div>
-            <div className='content'>
+            <div className='content projectContent'>
                 {projectData.map((project)=>
                     <ProjectCard projectInfo={project}/>
                 )}

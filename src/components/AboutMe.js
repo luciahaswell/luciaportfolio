@@ -8,10 +8,10 @@ const AboutMe = () => {
         <>
             <Header />
             <div className='aboutMe'>
-                <div className='sideBar'>
+                <div className='sideBar aboutMeSideBar'>
                     <h1 className='sideBarText'>ABOUT ME</h1>
                 </div>
-                <div className='content'>
+                <div className='content aboutMeContent'>
                     <div className='backgroundCard about'>
                         <h1 className="aboutMeHeader">So, who am I?</h1>
                         <p>My educational background:</p>
@@ -40,7 +40,7 @@ const AboutMe = () => {
                         <p>My unique combination of analytical thinking and artistic sensibility allows me to approach design challenges from a holistic perspective. I am passionate about creating intuitive and visually appealing user experiences that seamlessly merge form and function.</p>
                         <p>If you're looking for someone who can bring a unique blend of analytical thinking, artistic sensibility, and a genuine love for problem-solving, I would love to connect and explore how we can create something extraordinary together!</p>
                         <br></br><br></br>
-                        <p>Want more info? --  <a className='resumeText' href='../src/media/LuciaHaswellResume.pdf' download>Download my Resume!</a></p>
+                        <p>Want more info? --  <a className='resumeText' href='https://www.linkedin.com/in/lucia-haswell/overlay/1635540270604/single-media-viewer/?profileId=ACoAACaxIgsB1bSgGYzzL7wKQ9tK9JonL-F8M9c' target="_blank" rel="noreferrer">Download my Resume!</a></p>
                     </div>
                 </div>
             </div>

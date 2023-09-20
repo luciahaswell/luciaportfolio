@@ -9,7 +9,7 @@ const projectData = [
             require("../media/projectimgs/jammming/step1.JPG"),
             require("../media/projectimgs/jammming/step2.JPG"),
             require("../media/projectimgs/jammming/step3.JPG"),
-            require("../media/projectimgs/jammming/step4.jpg")
+            require("../media/projectimgs/jammming/step4.JPG")
         ],
         gitHubLink: "https://github.com/luciahaswell/jammming",
         mainColor:"#EF7251",
@@ -40,7 +40,7 @@ const projectData = [
         projectScreenshots: [require("../media/projectimgs/othello/step1.JPG"),
             require("../media/projectimgs/othello/step2.JPG"),
             require("../media/projectimgs/othello/step3.JPG"),
-            require("../media/projectimgs/othello/step4.jpg")],
+            require("../media/projectimgs/othello/step4.JPG")],
         gitHubLink: "https://luciahaswell.github.io/othello",
         mainColor:"#8DB49A",
         accentColor:"#EBCCB6"
