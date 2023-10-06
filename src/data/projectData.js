@@ -40,7 +40,7 @@ const projectData = [
         projectScreenshots: [require("../media/projectimgs/othello/step1.JPG"),
             require("../media/projectimgs/othello/step2.JPG"),
             require("../media/projectimgs/othello/step3.JPG"),
-            require("../media/projectimgs/othello/step4.JPG")],
+            require("../media/projectimgs/othello/step4.jpg")],
         gitHubLink: "https://luciahaswell.github.io/othello",
         mainColor:"#8DB49A",
         accentColor:"#EBCCB6"
