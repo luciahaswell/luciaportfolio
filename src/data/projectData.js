@@ -1,17 +1,17 @@
 const projectData = [
     {
-        projectName: "Jammming",
-        foldername: 'jammming',
-        techsUsed: "HTML, CSS, JavaScript, React",
-        shortDescription: "Spotify playlist generator",
-        longDescription: "I Created this with the guidance of Codecademy's Front-End Engineer Career Path. This React project lets users search songs through the Spotify API and add those to a playlist. Once all the songs are added to the playlist, the user can name and save the playlist to their own Spotify profile.",
+        projectName: "Healthy Competition",
+        foldername: 'healthycompetition',
+        techsUsed: "Figma",
+        shortDescription: "UI Design for an app that lets users compete while taking care of their health physically and mentally",
+        longDescription: "Business overview: Healthy Competition is an app that users can compete against each other in the bettering of themselves. They can gain points by either exercising or doing self-care items to take care of themselves. All of the apps on the market that host fitness competitions only connect to fitness trackers and go based on exercise. We are focusing on physical and mental health and how the two of them combine for a healthy lifestyle.\nProject's scope: The app will be a platform that hosts healthy competitions. Users can customize their challenges to suit their needs. They can choose their own timeline, self-care items they want to incorporate, and invite their friends to join.\nProject's goals and objectives: Healthy Competition aims to get people to take care of their mental and physical health while sparking their competitive nature in a healthy way. Users will complete self-care tasks on a daily basis and create healthy habits without even realizing it.\nTarget audience: The end users of this application will be anyone from the ages of 16-60 looking to create healthy habits in a group setting. Groups can be coworkers, neighbors, friends, family, etc.\nDirect Competitors: none \nIndirect Competitors: Friendly competition, Challenges - Compete, Get Fit, GymRats. This product stands out because all of the challenge apps listed above only include exercise in their competition.\nDesign Preferences: The app will have a cool tone, green-focused color palette. The interface will be clean and minimalist with some pops of colors to associate fun with your health.",
         projectScreenshots: [
-            require("../media/projectimgs/jammming/step1.JPG"),
-            require("../media/projectimgs/jammming/step2.JPG"),
-            require("../media/projectimgs/jammming/step3.JPG"),
-            require("../media/projectimgs/jammming/step4.jpg")
+            require("../media/projectimgs/healthycompetition/prototype.png"),
+            require("../media/projectimgs/healthycompetition/Vision Board.png"),
+            require("../media/projectimgs/healthycompetition/sitemap.png"),
+            require("../media/projectimgs/healthycompetition/wireframe.png")
         ],
-        gitHubLink: "https://github.com/luciahaswell/jammming",
+        gitHubLink: "https://www.figma.com/file/c434Q6plbQph8ft2LDUPjb/Healthy-Competition?type=design&node-id=65%3A548&mode=design&t=lOQPe68NJ1fnI9Np-1",
         mainColor:"#EF7251",
         accentColor:"#E5AAC9"
     },
@@ -40,7 +40,7 @@ const projectData = [
         projectScreenshots: [require("../media/projectimgs/othello/step1.JPG"),
             require("../media/projectimgs/othello/step2.JPG"),
             require("../media/projectimgs/othello/step3.JPG"),
-            require("../media/projectimgs/othello/step4.jpg")],
+            require("../media/projectimgs/othello/step4.JPG")],
         gitHubLink: "https://luciahaswell.github.io/othello",
         mainColor:"#8DB49A",
         accentColor:"#EBCCB6"
@@ -79,7 +79,6 @@ const projectData = [
         mainColor:"#EF7251",
         accentColor:"#E5AAC9"
     }
-    /*
     ,
         {
         projectName: "Alex in Italy",
@@ -87,12 +86,17 @@ const projectData = [
         foldername: 'alexinitaly',
         shortDescription: "Freelance Project: Italy Travel Blog",
         longDescription: "Freelance project for a client. Alex got a grant to travel across Italy in the Summer and explore the history, nature, and cuisine of the country. She wanted a web page where she could showcase her trip and share it with others. We met to talk about her expectations for this project. What information should be displayed and how she wanted it laid out. I built a site map that went through all the possible paths and organized the information in the best manner. When running that past her, I proceeded to build the design in Figma to her liking based on some color palettes and fonts she provided. Organizing all this information efficiently was the biggest tackle, since there was so much for each place she traveled to in Italy. Once we got a design we both agreed on, I built the webpage using React and then deployed using Netlify so she can share her travel stories with the grant providers, her students, friends, and family!",
-        projectScreenshots: [ require()],
+        projectScreenshots: [ 
+            require("../media/projectimgs/alexinitaly/step1.png"),
+            require("../media/projectimgs/alexinitaly/step2.png"),
+            require("../media/projectimgs/alexinitaly/step3.png"),
+            require("../media/projectimgs/alexinitaly/step4.png")
+    ],
         gitHubLink: "https://alex-in-italy.netlify.app",
         mainColor:"#DDB954",
         accentColor:"#3560DB"
     }
-    */
+
 
 ]
 

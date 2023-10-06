@@ -19,6 +19,13 @@ function ScrollToTop() {
 
 const ProjectPage = ({ projectInfo }) => {
     
+    const longDescriptionParagraphs = projectInfo.longDescription.split('\n').map((paragraph, index) => (
+        <>
+        <p key={index}>{paragraph}</p>
+        <br></br>
+        </>
+    ));
+
     return (
         <>
             <ScrollToTop/>
@@ -32,7 +39,7 @@ const ProjectPage = ({ projectInfo }) => {
                         style={{ backgroundColor: projectInfo.mainColor }}
                     >
                         <h1 style={{ color: projectInfo.accentColor }}>{projectInfo.projectName}</h1>
-                        <p>{projectInfo.longDescription}</p>
+                        <p>{longDescriptionParagraphs}</p>
                         <br></br>
                         <p>Technologies Used: {projectInfo.techsUsed}</p>
                         <br></br>
