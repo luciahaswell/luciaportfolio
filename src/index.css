@@ -197,6 +197,7 @@ svg>.initials {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  align-items: center;
 }
 
 .projectCard.odd{
@@ -244,9 +245,7 @@ svg>.initials {
 
 /* project page */
 
-.projectPage{
-  display: 
-}
+
 
 .projectLink {
   text-decoration: underline;
