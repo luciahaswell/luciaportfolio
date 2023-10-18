@@ -12,9 +12,8 @@ const Header = () => {
                     </svg>
             </Link>
             <div className='navItems'>
-                <Link to="/aboutme"><h3>ABOUT ME</h3></Link>
-                <Link to="/projects"><h3>PROJECTS</h3></Link>
-                <Link to="/skills"><h3>SKILLS</h3></Link>
+                <a href="#aboutMeSection"><h3>ABOUT ME</h3></a>
+                <a href="#projectsSection"><h3>PROJECTS</h3></a>
             </div>
         </div>
     )

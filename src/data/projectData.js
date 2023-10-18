@@ -13,7 +13,45 @@ const projectData = [
         ],
         gitHubLink: "https://www.figma.com/file/c434Q6plbQph8ft2LDUPjb/Healthy-Competition?type=design&node-id=65%3A548&mode=design&t=lOQPe68NJ1fnI9Np-1",
         mainColor:"#EF7251",
-        accentColor:"#E5AAC9"
+        accentColor:"#E5AAC9",
+        projectVideo: require("../media/projectimgs/videos/HealthyCompetitionVideo.mp4"),
+        oddEven: 'odd'
+    },
+     {
+        projectName: "Alex in Italy",
+        techsUsed: "Figma, HTML, CSS, JavaScript, React",
+        foldername: 'alexinitaly',
+        shortDescription: "Freelance Project: Italy Travel Blog",
+        longDescription: "Freelance project for a client. Alex got a grant to travel across Italy in the Summer and explore the history, nature, and cuisine of the country. She wanted a web page where she could showcase her trip and share it with others. We met to talk about her expectations for this project. What information should be displayed and how she wanted it laid out. I built a site map that went through all the possible paths and organized the information in the best manner. When running that past her, I proceeded to build the design in Figma to her liking based on some color palettes and fonts she provided. Organizing all this information efficiently was the biggest tackle, since there was so much for each place she traveled to in Italy. Once we got a design we both agreed on, I built the webpage using React and then deployed using Netlify so she can share her travel stories with the grant providers, her students, friends, and family!",
+        projectScreenshots: [ 
+            require("../media/projectimgs/alexinitaly/step1.png"),
+            require("../media/projectimgs/alexinitaly/step2.png"),
+            require("../media/projectimgs/alexinitaly/step3.png"),
+            require("../media/projectimgs/alexinitaly/step4.png")
+    ],
+        gitHubLink: "https://alex-in-italy.netlify.app",
+        mainColor:"#DDB954",
+        accentColor:"#3560DB",
+        projectVideo: require("../media/projectimgs/videos/AlexInItalyVideo.mp4"),
+        oddEven: 'even'
+    },
+        {
+        projectName: "Travel Nurse Guide",
+        techsUsed: "Figma, HTML, CSS, JavaScript, React",
+        foldername: 'statelicensure',
+        shortDescription: "Freelance Project: Visual guide to help out Travel Nurse Recruiters & Travel Nurses",
+        longDescription: "Freelance project for a client who is a travel nurse recruiter. In order to best help her nurses, she was looking for a way to organize RN state licensure in an interactive format that was informative and easy to understand for her and for the nurses she sends it to. We sat down and talked about her needs for this project and came up with a beautiful solution! RN state licensure is constantly changing and she wanted to be able to update the map on her own when these changes occurred. I worked through a solution to connect to the Google Sheets API so that whenever there is an update to the state licensure, she can manually update the docs and the site will automatically update for her. Tackling the interactive map was the toughest part. I did a lot of research and found that I could import an SVG map of the United States using a Figma plugin. However, it was still missing the state abbreviations and the British Virgin Islands. I added all of these and was able to export the entire SVG as a whole and then took it apart to turn each state into a component into React to add the hover features! I designed the site layout on Figma, then built it with React, and then deployed it using Netlify!",
+        projectScreenshots: [
+            require("../media/projectimgs/statelicensure/step1.jpg"),
+            require("../media/projectimgs/statelicensure/step2.jpg"),
+            require("../media/projectimgs/statelicensure/step3.jpg"),
+            require("../media/projectimgs/statelicensure/step4.jpg")
+        ],
+        gitHubLink: "https://statelicensure.netlify.app/",
+        mainColor:"#8DB49A",
+        accentColor:"#E1D6C3",
+        projectVideo: require("../media/projectimgs/videos/TravelNurseVideo.mov"),
+        oddEven: 'odd'
     },
     {
         projectName: "Tic-Tac-Toe",
@@ -28,8 +66,10 @@ const projectData = [
             require("../media/projectimgs/tictactoe/step4.JPG")
         ],
         gitHubLink: "https://luciahaswell.github.io/tictactoe/",
-        mainColor:"#DDB954",
-        accentColor:"#3560DB"
+        mainColor:"#E5AAC9",
+        accentColor:"#E28836",
+        projectVideo: require("../media/projectimgs/videos/TicTacToeVideo.mp4"),
+        oddEven: 'even'
     },
     {
         projectName: "Othello",
@@ -42,60 +82,12 @@ const projectData = [
             require("../media/projectimgs/othello/step3.JPG"),
             require("../media/projectimgs/othello/step4.jpg")],
         gitHubLink: "https://luciahaswell.github.io/othello",
-        mainColor:"#8DB49A",
-        accentColor:"#EBCCB6"
-
-    },
-    {
-        projectName: "Portfolio Website",
-        techsUsed: "Figma, HTML, CSS, JavaScript, React",
-        foldername: 'luciahaswell',
-        shortDescription: "Personal portfolio website for myself",
-        longDescription: "I wanted a colorful portfolio website to display my personality as well as showcase my work. I found this color palette on Pinterest and built out a design in Figma that incorporated all of the colors in a non-overwhelming way. Once built in Figma, I took the design to Visual Studio and developed a fully functioning site! You’re on it right now :)",
-        projectScreenshots: [
-            require("../media/projectimgs/luciahaswell/figma.JPG"),
-            require("../media/projectimgs/luciahaswell/step1.png"),
-            require("../media/projectimgs/luciahaswell/step2.png"),
-            require("../media/projectimgs/luciahaswell/step3.png"),
-
-        ],
-        gitHubLink: "https://github.com/luciahaswell/luciaportfolio",
-        mainColor:"#3560DB",
-        accentColor:"#DDB954"
-    },
-    {
-        projectName: "Travel Nurse Recruiter Guide",
-        techsUsed: "Figma, HTML, CSS, JavaScript, React",
-        foldername: 'statelicensure',
-        shortDescription: "Freelance Project: Visual guide to help out Travel Nurse Recruiters & Travel Nurses",
-        longDescription: "Freelance project for a client who is a travel nurse recruiter. In order to best help her nurses, she was looking for a way to organize RN state licensure in an interactive format that was informative and easy to understand for her and for the nurses she sends it to. We sat down and talked about her needs for this project and came up with a beautiful solution! RN state licensure is constantly changing and she wanted to be able to update the map on her own when these changes occurred. I worked through a solution to connect to the Google Sheets API so that whenever there is an update to the state licensure, she can manually update the docs and the site will automatically update for her. Tackling the interactive map was the toughest part. I did a lot of research and found that I could import an SVG map of the United States using a Figma plugin. However, it was still missing the state abbreviations and the British Virgin Islands. I added all of these and was able to export the entire SVG as a whole and then took it apart to turn each state into a component into React to add the hover features! I designed the site layout on Figma, then built it with React, and then deployed it using Netlify!",
-        projectScreenshots: [
-            require("../media/projectimgs/statelicensure/step1.jpg"),
-            require("../media/projectimgs/statelicensure/step2.jpg"),
-            require("../media/projectimgs/statelicensure/step3.jpg"),
-            require("../media/projectimgs/statelicensure/step4.jpg")
-        ],
-        gitHubLink: "https://statelicensure.netlify.app/",
         mainColor:"#EF7251",
-        accentColor:"#E5AAC9"
+        accentColor:"#E5AAC9",
+        projectVideo: require("../media/projectimgs/videos/OthelloVideo.mp4"),
+        oddEven: 'odd'
     }
-    ,
-        {
-        projectName: "Alex in Italy",
-        techsUsed: "Figma, HTML, CSS, JavaScript, React",
-        foldername: 'alexinitaly',
-        shortDescription: "Freelance Project: Italy Travel Blog",
-        longDescription: "Freelance project for a client. Alex got a grant to travel across Italy in the Summer and explore the history, nature, and cuisine of the country. She wanted a web page where she could showcase her trip and share it with others. We met to talk about her expectations for this project. What information should be displayed and how she wanted it laid out. I built a site map that went through all the possible paths and organized the information in the best manner. When running that past her, I proceeded to build the design in Figma to her liking based on some color palettes and fonts she provided. Organizing all this information efficiently was the biggest tackle, since there was so much for each place she traveled to in Italy. Once we got a design we both agreed on, I built the webpage using React and then deployed using Netlify so she can share her travel stories with the grant providers, her students, friends, and family!",
-        projectScreenshots: [ 
-            require("../media/projectimgs/alexinitaly/step1.png"),
-            require("../media/projectimgs/alexinitaly/step2.png"),
-            require("../media/projectimgs/alexinitaly/step3.png"),
-            require("../media/projectimgs/alexinitaly/step4.png")
-    ],
-        gitHubLink: "https://alex-in-italy.netlify.app",
-        mainColor:"#DDB954",
-        accentColor:"#3560DB"
-    }
+
 
 
 ]

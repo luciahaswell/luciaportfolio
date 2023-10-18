@@ -25,16 +25,16 @@ li {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 p,
 li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 li {
@@ -50,18 +50,25 @@ a>p:hover {
   color: rgb(57, 57, 57);
 }
 
+
+/* spacing */
+
 .content {
-  width: 90%;
+  width: 100%;
   background-color: #E1D6C3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.backgroundCard {
+.backgroundCard,.projectCard,.projectShowcasePage{
   border-radius: 30px;
   margin: 3rem;
   padding: 3rem;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  width: 80%;
 }
-
 
 /* Header */
 .header {
@@ -71,7 +78,6 @@ a>p:hover {
   padding: 0rem 5%;
   width: 90%;
   align-items: center;
-
 }
 
 .headerIcon {
@@ -81,7 +87,6 @@ a>p:hover {
 .headerIcon>img {
   object-fit: fill;
 }
-
 
 a>svg {
   width: 70%;
@@ -95,7 +100,6 @@ svg>.heartIcon {
 svg>.initials {
   fill: white;
 }
-
 
 .navItems {
   display: inline-flex;
@@ -163,7 +167,7 @@ svg>.initials {
   border: 20px white solid;
   border-radius: 30px;
   text-align: center;
-  margin: 0;
+  margin: 1;
   padding: 0 1.5rem;
 }
 
@@ -173,68 +177,55 @@ svg>.initials {
   left: 60%;
 }
 
-/* sideBar*/
-
-.sideBar {
+.sideBarText{
+  align-items: center;
   background-color: #E1D6C3;
-  min-height: 100vh;
+  color: #3560DB;
   display: flex;
   flex-direction: column;
+  height: 4rem;
   padding: 1rem;
-  width: 7rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.sideBarText {
-  display: flex;
-  color: #3560DB;
-  padding: 1rem;
-  transform: rotate(-90deg);
-  transform-origin: top left;
-  position: relative;
-  left: 0px;
-  width: 0%;
-  top: 3rem;
-  height: 16vh;
-  
-  justify-content: flex-end;
+  width: calc(100% - 2rem);
   white-space: nowrap;
-  align-items: flex-start;
-}
 
-/* projectHomepage */
-
-.projectHomepage {
-  display: inline-flex;
-  width: 100%;
-  height: 100%;
 }
 
 
 /* projectCard */
 
 .projectCard {
-  border-radius: 30px;
-  margin: 3rem;
-  padding: 3rem;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
-
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
+.projectCard.odd{
+  flex-direction: row-reverse;
+}
 .readMore {
   text-decoration: underline;
 }
 
-/* aboutMe */
-
-.aboutMe {
-  display: inline-flex;
-  width: 100%;
-  height: 100%;
+.projectWords{
+  width: 45%;
 }
 
-.backgroundCard.about {
+.projectVideoContainer{
+  width: 45%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.projectVideo{
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* aboutMe */
+.backgroundCard{
   background-color: #DDB954;
 }
 
@@ -251,12 +242,10 @@ svg>.initials {
   color: rgb(57, 57, 57);
 }
 
-
 /* project page */
 
-.sideBarTextProject {
-  font-size: 2rem;
-  color: #3560DB;
+.projectPage{
+  display: 
 }
 
 .projectLink {
@@ -266,21 +255,21 @@ svg>.initials {
 
 .projectLink:hover {
   text-decoration-color: rgb(57, 57, 57);
-  ;
 }
 
 .carouselContainer {
-  margin: 3rem;
-  padding: 3rem;
   border-radius: 30px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
+  margin: 1rem 0rem;
 }
 
 .projectPage{
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
 }
 
+.sideBarText.project{
+  align-items: flex-start;
+}
 /* image Gallery */
 
 .carousel {
@@ -297,7 +286,7 @@ svg>.initials {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 90%;
 }
 
 .carouselImage {
@@ -314,25 +303,13 @@ svg>.initials {
   background: none;
   border: none;
   font-size: 3.5rem;
-  padding: 0 1rem;
+  padding: 0 0rem;
   cursor: pointer;
-  width: 12.5%;
+  width: 5%;
   height: auto;
 }
 
 
-
-/* skills page */
-
-.skillsPage {
-  display: inline-flex;
-  width: 100%;
-  height: 100%;
-}
-
-.backgroundCard.skills {
-  background-color: #EF7251;
-}
 
 
 @media only screen and (max-width: 1100px) {
@@ -352,6 +329,21 @@ svg>.initials {
 
   .nameBubble {
     left: 45%;
+  }
+
+  .projectCard.even, .projectCard.odd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectWords{
+    width: 100%;
+  }
+
+  .projectVideoContainer{
+    width: 80%;
+    margin: 1rem 0;
   }
 
 
@@ -420,20 +412,8 @@ svg>.initials {
     padding: 0 1rem;
   }
 
-  .sideBar{
-    width: 10%;
-  }
 
-  .sideBarText{
-    font-size: 2rem;
-    padding: 0;
-  }
-
-  .content{
-    width: 90%;
-  }
-
-  .projectCard,.backgroundCard,.carouselContainer{
+  .projectCard,.backgroundCard,.projectShowcasePage{
     margin: 2rem;
     padding: 2rem;
   }
@@ -450,7 +430,7 @@ svg>.initials {
 }
 
 @media only screen and (max-width: 600px){
-  .projectCard,.backgroundCard.carouselContainer{
+  .projectCard,.backgroundCard,.projectShowcasePage{
     margin: 1.5rem;
     padding: 1.5rem;
   }
@@ -483,7 +463,7 @@ svg>.initials {
   }
 
   .headshot {
-    width: 80%;
+    width: 60%;
   }
 
   .headerIcon{
@@ -503,28 +483,37 @@ svg>.initials {
     height: 60%;
   }
 
-  .sideBar.aboutMeSideBar, .sideBar.projectHomepageSideBar, .sideBar.skillsSideBar{
-    display: none;
-  }
-
-  .content.projectContent, .content.aboutMeContent, .content.skillsContent{
-    width: 100%;
-  }
-
-  .project.sideBar{
-    width: 5%;
-  }
-
   .content.projectPageContent{
     width: 95%;
   }
 
   .carouselContainer{
-    padding: .6rem;
-    margin: .6rem;
+    padding: 0rem;
+    margin: 1rem 0rem;
   }
 
   .content.projectPageContent{
     padding-bottom: 1rem;
   }
+}
+
+@media only screen and (max-width: 500px){
+  h1{
+    font-size: 1.5rem;
+  }
+
+  p,li{
+    font-size: 1rem;
+  }
+
+  .projectVideoContainer{
+    width: 95%;
+    height: auto;
+  }
+
+  .sideBarText{
+    height: auto;
+    padding-bottom: 0;
+  }
+
 }
