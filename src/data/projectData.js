@@ -12,8 +12,8 @@ const projectData = [
             require("../media/projectimgs/healthycompetition/wireframe.png")
         ],
         gitHubLink: "https://www.figma.com/file/c434Q6plbQph8ft2LDUPjb/Healthy-Competition?type=design&node-id=65%3A548&mode=design&t=lOQPe68NJ1fnI9Np-1",
-        mainColor:"#EF7251",
-        accentColor:"#E5AAC9",
+        mainColor:"#21357C",
+        accentColor:"#E1D6C3",
         projectVideo: require("../media/projectimgs/videos/HealthyCompetitionVideo.mp4"),
         oddEven: 'odd'
     },
@@ -30,8 +30,8 @@ const projectData = [
             require("../media/projectimgs/alexinitaly/step4.png")
     ],
         gitHubLink: "https://alex-in-italy.netlify.app",
-        mainColor:"#DDB954",
-        accentColor:"#3560DB",
+        mainColor:"#C73884",
+        accentColor:"#292B2E",
         projectVideo: require("../media/projectimgs/videos/AlexInItalyVideo.mp4"),
         oddEven: 'even'
     },
@@ -48,7 +48,7 @@ const projectData = [
             require("../media/projectimgs/statelicensure/step4.jpg")
         ],
         gitHubLink: "https://statelicensure.netlify.app/",
-        mainColor:"#8DB49A",
+        mainColor:"#4F7856",
         accentColor:"#E1D6C3",
         projectVideo: require("../media/projectimgs/videos/TravelNurseVideo.mov"),
         oddEven: 'odd'
@@ -82,8 +82,8 @@ const projectData = [
             require("../media/projectimgs/othello/step3.JPG"),
             require("../media/projectimgs/othello/step4.jpg")],
         gitHubLink: "https://luciahaswell.github.io/othello",
-        mainColor:"#EF7251",
-        accentColor:"#E5AAC9",
+        mainColor:"#C73884",
+        accentColor:"#292B2E",
         projectVideo: require("../media/projectimgs/videos/OthelloVideo.mp4"),
         oddEven: 'odd'
     }

@@ -22,6 +22,7 @@ p,
 li {
   color: white;
   font-family: 'Dela Gothic One', sans-serif;
+  font-weight: 200;
 }
 
 h1 {
@@ -55,7 +56,7 @@ a>p:hover {
 
 .content {
   width: 100%;
-  background-color: #E1D6C3;
+  background-color: #E4E4DD;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +74,7 @@ a>p:hover {
 /* Header */
 .header {
   height: 15vh;
-  background-color: #8DB49A;
+  background-color: #424242;
   display: inline-flex;
   padding: 0rem 5%;
   width: 90%;
@@ -94,7 +95,7 @@ a>svg {
 }
 
 svg>.heartIcon {
-  fill: #EF7251;
+  fill: #C73884;
 }
 
 svg>.initials {
@@ -116,7 +117,7 @@ svg>.initials {
 /* footer */
 
 .footer {
-  background-color: #8DB49A;
+  background-color: #424242;
   height: 15vh;
   display: flex;
   align-items: center;
@@ -142,11 +143,16 @@ svg>.initials {
 .svgIcon {
   height: 4rem;
   width: auto;
+  color: white;
+}
+
+svg{
+  color: white;
 }
 
 /* homepage */
 .homePage {
-  background-color: #EF7251;
+  background-color: #292B2E;
   height: 85vh;
 }
 
@@ -163,7 +169,7 @@ svg>.initials {
   position: absolute;
   top: 30%;
   left: 40%;
-  background-color: #E5AAC9;
+  background-color: #C73884;
   border: 20px white solid;
   border-radius: 30px;
   text-align: center;
@@ -179,8 +185,8 @@ svg>.initials {
 
 .sideBarText{
   align-items: center;
-  background-color: #E1D6C3;
-  color: #3560DB;
+  background-color: #E4E4DD;
+  color: #424242;
   display: flex;
   flex-direction: column;
   height: 4rem;
@@ -227,15 +233,15 @@ svg>.initials {
 
 /* aboutMe */
 .backgroundCard{
-  background-color: #DDB954;
+  background-color: #4F7856;
 }
 
 .aboutMeHeader {
-  color: #E28836;
+  color: #292B2E;
 }
 
 .resumeText {
-  color: #E28836;
+  color: #292B2E;
   text-decoration: underline;
 }
 
@@ -253,7 +259,7 @@ svg>.initials {
 }
 
 .projectLink:hover {
-  text-decoration-color: rgb(57, 57, 57);
+  text-decoration-color: #424242;
 }
 
 .carouselContainer {
